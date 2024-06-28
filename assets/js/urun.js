@@ -1,7 +1,7 @@
 let form = document.querySelector('.catchForm');
 let productListHere = document.querySelector('.productListHere');
 let clearButton = document.querySelector('.clear');
-let productList = JSON.parse(localStorage.getItem('productList')) || [];
+let productList = [];
 
 function handleFormSubmit(e) {
   e.preventDefault();
