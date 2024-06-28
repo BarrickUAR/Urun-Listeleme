@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urun Listeleme</title>
+  <link rel="stylesheet" href="assets/css/urun.css">
+  <script src="assets/js/urun.js" defer></script>
+</head>
+<body>
+  <div class="forms">
+    <form class="catchForm">
+      <label>Ürün Adı</label>
+      <input required type="text" name="productName" id="productName">
+
+      <label>Fiyatı</label>
+      <input required type="number" name="price" id="price">
+
+      <label>Ürün Açıklaması</label>
+      <input required type="text" name="explanation" id="explanation">
+
+      <label>Ürün Detayı</label>
+      <input required type="text" name="productDetail" id="productDetail">
+
+      <label>Ürün Resmi</label>
+      <input required type="text" name="productPhoto" id="productPhoto">
+
+      <label>Kategori</label>
+
+      <select required name="category" id="category">
+        
+        <option value="Elektronik">Elektronik</option>
+        <option value="Giyim">Giyim</option>
+        <option value="Kitap">Kitap</option>
+        <option value="Yiyecek">Yiyecek</option>
+        <option value="Ev Eşyası">Ev Eşyası</option>
+
+      </select>
+
+      <button type="submit">Gönder</button>
+      
+      <button class="clear">Tüm Ürünleri Sil</button>
+    </form>
+
+    <div class="productListHere"></div>
+  </div>
+</body>
+</html>
